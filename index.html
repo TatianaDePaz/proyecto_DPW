@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="custom.css">
+    <style>
+        body {
+            background-color: coral;
+            color: black;
+        }
+    </style>
+ 
+    <title>Inicio</title>
+</head>
+<body>
+        <div class="icono_menu">
+            <img src="img/menu.png" alt="" id="icono_menu">
+        </div>
+        <div class="cont-menu active" id="menu">
+            <h4 class="text-center">Comida</h4>
+            <ul>
+                <li><a href="html/formulario.html">Registrarse</a></li>
+                <li><a href="html/comida_asiatica.html">Asiatica</a></li>
+                <li><a href="html/comida_italiana.html">Italiana</a></li>
+                <li><a href="html/comida_mexicana.html">Mexicana</a></li>
+                <li><a href="html/pagina3.1.html">Postres</a></li>
+                <li class="nav-item dropdown">
+                    <a data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Chefs</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="html/pagina1.html">Ramsay</a></li>
+                    <li><a class="dropdown-item" href="html/pagina2.html">Daniela</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/Gastronomia_ES.html">Salvadoreña</a></li>
+                <li class="nav-item dropdown">
+                    <a data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Saludable</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="html/Comida_saludable.html">Comida saludable</a></li>
+                    <li><a class="dropdown-item" href="html/Bebidas_saludables.html">Bebidas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    <hr>
+
+    <div class="slider">
+        <ul>
+            <li><img src="img/comida_asiatica.png" alt=""></li>
+            <li><img src="img/comida_Italiana.png" alt=""></li>
+            <li><img src="img/comida_mexicana.png" alt=""></li>
+            <li><img src="img/comida_salvadoreña.png" alt=""></li>
+            <li><img src="img/comida_saludable.png" alt=""></li>
+            <li><img src="img/postres.png" alt=""></li>
+
+        </ul>
+    </div>
+
+
+    <script src="js/menu.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
