@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de suscripción</title>
+  
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="../plugins/jquery/jquery.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+  <style>
+    body {
+      background-color: #ffe08c;
+      padding: 20px;
+    }
+
+    .container {
+      border: 1px black;
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(247, 118, 79);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Comida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_asiatica.html">Asiatica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_mexicana.html">Mexicana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_italiana.html">Italiana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/pagina3.1.html">Postres</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Chefs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../html/pagina1.html">Ramsay</a></li>
+                <li><a class="dropdown-item" href="../html/pagina2.html">Daniela</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/Gastronomia_ES.html">Salvadoreña</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Saludable
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../html/Comida_saludable.html">Comida Saludable</a></li>
+                <li><a class="dropdown-item" href="../html/Bebidas_saludables.html">Bebidas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="container">
+    <h1>Formulario de suscripción</h1>
+    <form id="subscriptionForm">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input type="text" class="form-control" id="apellido" required>
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" class="form-control" id="correo" required>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" class="form-control" id="telefono" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Suscribirse</button>
+    </form>
+  </div>
+  <a class="btn btn-primary" href="../index.html" role="button">Volver</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script>
+    $(document).ready(function() {
+      // Capturar el evento de envío del formulario
+      $('#subscriptionForm').submit(function(e) {
+        e.preventDefault(); // Evitar el envío del formulario
+
+        var nombre = $('#nombre').val();
+        var apellido = $('#apellido').val();
+        var correo = $('#correo').val();
+        var telefono = $('#telefono').val();
+
+        
+        Swal.fire({
+          icon: 'success',
+          title: '¡Gracias por suscribirte!',
+          text: 'Recibirás nuestras ofertas y recetas por correo electrónico.',
+          showConfirmButton: false,
+          timer: 2000
+        });
+
+        $('#nombre').val('');
+        $('#apellido').val('');
+        $('#correo').val('');
+        $('#telefono').val('');
+      });
+    });
+  </script>
+</body>
+</html>

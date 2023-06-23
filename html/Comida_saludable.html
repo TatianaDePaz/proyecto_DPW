@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../custom.css">
+  <title>Comida Saludable</title>
+  <!-- Enlace a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color:  rgb(252, 58, 58); /* Color de fondo entre rojo y rosa */
+      color: black; /* Color de letra blanco */
+    }
+  
+    .recipe-card {
+      background-color:  rgb(252, 173, 83); /* Color de fondo de los contenedores de recetas */
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  
+    /* Agrega tus estilos CSS personalizados aquí */
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg"  style="background-color: rgb(247, 118, 79);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Comida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/formulario.html">Registrarse</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_asiatica.html">Asiatica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_italiana.html">Italiana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_mexicana.html">Mexicana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/pagina3.1.html">Postres</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Chefs
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/pagina1.html">Ramsay</a></li>
+              <li><a class="dropdown-item" href="../html/pagina2.html">Daniela</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Gastronomia_ES.html">Salvadoreña</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Saludable
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/Comida_saludable.html">Comida Saludable</a></li>
+              <li><a class="dropdown-item" href="../html/Bebidas_saludables.html">Bebidas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+
+  <main>
+    <!-- Secciones principales de la página -->
+    <section id="recipes">
+      <!-- Sección de recetas -->
+      <h1 class="text-center">Recetas Saludables</h1>
+
+      <div class="recipe-card">
+        <h3 class="text-center">Ensalada de Quinoa</h3>
+        <img src="../img/quinoa.png" alt="Ensalada de Quinoa" width="200.px" height="180.px">
+        <p>Ingredientes:</p>
+        <ul>
+          <li>1 taza de quinoa cocida</li>
+          <li>Tomate cherry</li>
+          <li>Pepino</li>
+          <li>Aceitunas</li>
+          <li>Queso feta</li>
+          <li>Aceite de oliva</li>
+          <li>Jugo de limón</li>
+          <li>Sal y pimienta al gusto</li>
+        </ul>
+        <p>Instrucciones:</p>
+        <ol>
+          <li>En un tazón, combina la quinoa cocida, los tomates cherry cortados por la mitad, el pepino en rodajas, las aceitunas y el queso feta desmenuzado.</li>
+          <li>En otro recipiente, mezcla el aceite de oliva, el jugo de limón, la sal y la pimienta.</li>
+          <li>Vierte la mezcla de aderezo sobre la ensalada y mezcla bien.</li>
+          <li>Sirve y disfruta.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-card">
+        <h3 class="text-center">Salmón a la Parrilla</h3>
+        <img src="../img/salmon.png" alt="Salmón a la Parrilla" width="200.px" height="180.px">
+        <p>Ingredientes:</p>
+        <ul>
+          <li>Filete de salmón</li>
+          <li>Limón</li>
+          <li>Sal y pimienta al gusto</li>
+          <li>Eneldo fresco</li>
+          <li>Aceite de oliva</li>
+        </ul>
+        <p>Instrucciones:</p>
+        <ol>
+          <li>Prende la parrilla a fuego medio-alto.</li>
+          <li>Salpimienta el filete de salmón y rocía con jugo de limón.</li>
+          <li>Cocina el salmón en la parrilla durante 4-6 minutos por cada lado, dependiendo del grosor del filete.</li>
+          <li>Retira el salmón de la parrilla y espolvorea con eneldo fresco.</li>
+          <li>Sirve caliente y disfruta.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-card">
+        <h3 class="text-center">Ensalada de Frutas</h3>
+        <img src="../img/ensalada.png" alt="Ensalada de Frutas" width="200.px" height="180.px">
+        <p>Ingredientes:</p>
+        <ul>
+          <li>Manzanas</li>
+          <li>Naranjas</li>
+          <li>Piña</li>
+          <li>Uvas</li>
+          <li>Melón</li>
+          <li>Menta fresca</li>
+          <li>Jugo de limón</li>
+          <li>Miel</li>
+        </ul>
+        <p>Instrucciones:</p>
+        <ol>
+          <li>Pela y corta todas las frutas en trozos.</li>
+          <li>En un tazón grande, mezcla las frutas cortadas.</li>
+          <li>Exprime el jugo de limón sobre la ensalada de frutas y agrega un poco de miel al gusto.</li>
+          <li>Decora con hojas de menta fresca.</li>
+          <li>Refrigera durante al menos 1 hora antes de servir.</li>
+        </ol>
+      </div>
+
+      <div class="recipe-card">
+        <h3 class="text-center">Batido de Espinacas y Plátano</h3>
+        <img src="../img/espinacas.png" alt="Batido de Espinacas y Plátano" width="200.px" height="180.px">
+        <p>Ingredientes:</p>
+        <ul>
+          <li>Espinacas frescas</li>
+          <li>Plátano maduro</li>
+          <li>Leche de almendras</li>
+          <li>Yogur griego</li>
+          <li>Miel</li>
+        </ul>
+        <p>Instrucciones:</p>
+        <ol>
+          <li>En una licuadora, combina las espinacas frescas, el plátano en trozos, la leche de almendras, el yogur griego y la miel.</li>
+          <li>Mezcla hasta obtener una consistencia suave y homogénea.</li>
+          <li>Sirve en un vaso y disfruta como un batido saludable.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  
+  <a class="btn btn-primary" href="../index.html" role="button">Volver</a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

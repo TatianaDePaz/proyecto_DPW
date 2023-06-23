@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gordon Ramsay</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Estilos CSS personalizados */
+    .chef-image {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      /* Añade animación de rotación */
+      animation: rotate 4s infinite linear;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .dish-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .dish-image:hover {
+      transform: scale(1.1);
+    }
+
+    /* Colores personalizados */
+    :root {
+      --primary-color: #FF5722; /* Naranja */
+      --secondary-color: #03A9F4; /* Azul */
+      --text-color: #333333; /* Negro */
+    }
+
+    body {
+      color: var(--text-color);
+    }
+
+    h1, h2, h3 {
+      color: var(--primary-color);
+    }
+
+    .bg-primary {
+      background-color: var(--primary-color);
+      color: #FFFFFF;
+    }
+
+    .bg-secondary {
+      background-color: var(--secondary-color);
+      color: #FFFFFF;
+    }
+
+    .text-primary {
+      color: var(--primary-color);
+    }
+
+    .text-secondary {
+      color: var(--secondary-color);
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+    }
+
+    /* Estilos de introducción */
+    .introduction {
+      font-family: 'Pacifico', cursive;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .invisible-box {
+      display: none;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg"  style="background-color: rgb(247, 118, 79);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Comida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/formulario.html">Registrarse</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_asiatica.html">Asiatica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_italiana.html">Italiana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_mexicana.html">Mexicana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/pagina3.1.html">Postres</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Chefs
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/pagina1.html">Ramsay</a></li>
+              <li><a class="dropdown-item" href="../html/pagina2.html">Daniela</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Gastronomia_ES.html">Salvadoreña</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Saludable
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/Comida_saludable.html">Comida Saludable</a></li>
+              <li><a class="dropdown-item" href="../html/Bebidas_saludables.html">Bebidas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+  <header class="bg-primary py-4">
+    <div class="container text-center">
+      <h1>Gordon Ramsay</h1>
+      <img src="../img/ramsey/fotocara.jpeg" alt="chef" class="chef-image">
+    </div>
+    <div class="container mt-4">
+      <div class="introduction">
+        <h2>Presentando a Gordon Ramsay</h2>
+        <p>Gordon Ramsay es un reconocido chef y personalidad de la televisión. Con su estilo audaz y talento culinario, ha dejado una marca en la industria gastronómica. Su pasión por la cocina y su enfoque exigente han llevado sus platos a la cima. Descubre más sobre la historia, los logros y las creaciones culinarias de Ramsay.</p>
+     
+
+    </div>
+    
+  </header>
+
+  <main class="container mt-4">
+    <section>
+      <h2 class="text-center">Trabajo de Gordon Ramsay</h2>
+      <div class="text-center">
+        <h3 class="text-primary">Mejores Platillos</h3>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <img src="../img/ramsey/plato1.jpeg" alt="plato1" class="dish-image">
+          <p>1. Escalopes cocidos a la vinagreta</p>
+        </div>
+        <div class="col-md-4 mb-4">
+                    <img src="../img/ramsey/plato2.jpeg" alt="plato2" class="dish-image">
+          <p>2. Mero de carne crocante acompañado con puré de apio y corazones de alcachofa</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="../img/ramsey/plato3.jpeg" alt="plato3" class="dish-image">
+          <p>3. Tortellini de langosta</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-center">Reconocimientos de Gordon Ramsay</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">Gordon Ramsay ha ganado un máximo de 17 estrellas Michelin</li>
+            <li class="list-group-item">Condecorado con la Orden del Imperio Británico (2006)</li>
+            <li class="list-group-item">Actualmente presenta Hell's Kitchen y la versión estadounidense de MasterChef</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-center">Datos estadísticos</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Categoría</th>
+                <th>Estadística</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Visitas al sitio web</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>Seguidores en redes sociales</td>
+                <td>14.2M</td>
+              </tr>
+              <tr>
+                <td>Recetas publicadas</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>Estrellas Michelin</td>
+                <td>14</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="text-right" >Fuente: Gordon Ramsay</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <center><video width="640" height="360" controls>
+    <source src="../multimedia/Gordon Ramsay, chef： ＂El dinero nunca ha sido la motivación＂.mp4" type="video/mp4">
+    
+  </video></center>
+
+  <a class="btn btn-primary" href="../index.html" role="button">Volver</a>
+
+  <footer class="py-4 text-center" style="background-color: rgb(247, 118, 79);">
+    <div class="container">
+      <p >Derechos de autor &copy; 2023 Gordon Ramsay</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+body{
+  color: black;
+  color: #ffc163;
+}
+
+.a{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icono_menu{
+  margin: 40px 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.icono_menu img{
+  vertical-align: top;
+  width: 50px;
+  cursor: pointer;
+}
+
+.cont-menu{
+  background-color: coral;
+  box-shadow: 2px 0px 5px 2px coral;
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s ease;
+}
+
+.active{
+  transform: translate(-600px);
+}
+
+.opacity{
+  background-color: #ffe08c;
+  transition: all .5s ease;
+}
+
+.cont-menu ul{
+  padding: 100px 0px 20px 0px;
+  list-style: none;
+}
+
+.cont-menu ul li{
+  color: coral;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+  background-color: brown;
+  color:white;
+}
+
+.slider{
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 400%;animation: cambio 20s infinite;
+}
+
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+
+.slider img{
+  width: 100%;
+  height: 75% ;
+}
+
+@keyframes cambio{
+  0% {margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}

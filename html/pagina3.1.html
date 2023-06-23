@@ -1,0 +1,349 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Postres</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #0b90b1;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    h2 {
+      color: #555;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      width: 300px;
+      height: 400px;
+      margin: 20px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      color: #fff;
+      font-style: italic;
+      cursor: pointer;
+    }
+
+    .caption-expanded {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      color: #fff;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .footer {
+      background-color:  rgb(247, 118, 79);;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    /* Animación de carga */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Estilos y animaciones específicas para cada postre */
+
+    #dessert1 {
+      background-color: #ffb3b3;
+      animation: fadeIn 1s ease;
+    }
+
+    #dessert2 {
+      background-color: #b3ffcc;
+      animation: fadeIn 1s ease 0.2s;
+    }
+
+    #dessert3 {
+      background-color: #ffdd99;
+      animation: fadeIn 1s ease 0.4s;
+    }
+    .recommendations li {
+  cursor: pointer;
+}
+
+.recommendations table {
+  display: none;
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.recommendations table td {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+    /* Estilos para la caja de descripción */
+    .description-box {
+      background-color:  #ffb3b3;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 10px auto;
+    }
+  
+
+</style>
+  <script>
+    function expandCaption(dessertId) {
+      var caption = document.getElementById(dessertId).querySelector(".caption");
+      var captionExpanded = document.getElementById(dessertId).querySelector(".caption-expanded");
+
+      caption.style.display = "none";
+      captionExpanded.style.display = "block";
+    }
+  </script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg"  style="background-color: rgb(247, 118, 79);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Comida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/formulario.html">Registrarse</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_asiatica.html">Asiatica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_italiana.html">Italiana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_mexicana.html">Mexicana</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Chefs
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/pagina1.html">Ramsay</a></li>
+              <li><a class="dropdown-item" href="../html/pagina2.html">Daniela</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Gastronomia_ES.html">Salvadoreña</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Saludable
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/Comida_saludable.html">Comida Saludable</a></li>
+              <li><a class="dropdown-item" href="../html/Bebidas_saludables.html">Bebidas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+  <header>
+    <h1>Deliciosos Postres</h1>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Galería de Postres</h2>
+      <div class="gallery">
+        <div class="gallery-item" id="dessert1">
+          <img src="../img/imagenes/imagen1.jpeg" alt="Postre1">
+          <div class="caption" onclick="expandCaption('dessert1')">Receta de Tarta de Manzana</div>
+          <div class="caption-expanded">
+            <h3>Receta de Tarta de Manzana</h3>
+            <p>Ingredientes:</p>
+            <ul>
+              <li>2 manzanas</li>
+              <li>200 g de harina</li>
+              <li>100 g de azúcar</li>
+              <li>100 g de mantequilla</li>
+              <li>1 huevo</li>
+              <li>1 cucharadita de canela</li>
+            </ul>
+            <p>Preparación:</p>
+            <ol>
+              <li>Pela las manzanas y córtalas en rodajas finas.</li>
+              <li>En un bol, mezcla la harina, el azúcar y la canela.</li>
+              <li>Añade la mantequilla y mezcla con los dedos hasta obtener una textura arenosa.</li>
+              <li>Agrega el huevo y amasa hasta formar una masa homogénea.</li>
+              <li>Extiende la masa en un molde para tarta y coloca las rodajas de manzana encima.</li>
+              <li>Hornea a 180°C durante 30 minutos.</li>
+              <li>Deja enfriar antes de servir.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="gallery-item" id="dessert2">
+          <img src="../img/imagenes/imagen2.jpeg" alt="Postre2">
+          <div class="caption" onclick="expandCaption('dessert2')">Receta de Brownie de Chocolate</div>
+          <div class="caption-expanded">
+            <h3>Receta de Brownie de Chocolate</h3>
+            <p>Ingredientes:</p>
+            <ul>
+              <li>200 g de chocolate negro</li>
+              <li>150 g de mantequilla</li>
+              <li>200 g de azúcar</li>
+              <li>3 huevos</li>
+              <li>100 g de harina</li>
+              <li>50 g de nueces picadas</li>
+            </ul>
+            <p>Preparación:</p>
+            <ol>
+              <li>Derrite el chocolate y la mantequilla al baño maría.</li>
+              <li>Añade el azúcar y mezcla bien.</li>
+              <li>Incorpora los huevos uno a uno, batiendo después de cada adición.</li>
+              <li>Agrega la harina y mezcla hasta obtener una masa homogénea.</li>
+              <li>Añade las nueces picadas y mezcla.</li>
+              <li>Vierte la masa en un molde cuadrado y hornea a 180°C durante 25-30 minutos.</li>
+              <li>Deja enfriar antes de cortar en porciones.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="gallery-item" id="dessert3">
+          <img src="../img/imagenes/imagen3.jpeg" alt="Postre3">
+          <div class="caption" onclick="expandCaption('dessert3')">Receta de Cheesecake de Fresa</div>
+<div class="caption-expanded">
+<h3>Receta de Cheesecake de Fresa</h3>
+<p>Ingredientes:</p>
+<ul>
+<li>200 g de galletas digestive</li>
+<li>100 g de mantequilla derretida</li>
+<li>500 g de queso crema</li>
+<li>200 g de azúcar</li>
+<li>3 huevos</li>
+<li>1 cucharadita de esencia de vainilla</li>
+<li>200 g de fresas</li>
+<li>2 cucharadas de mermelada de fresa</li>
+</ul>
+<p>Preparación:</p>
+<ol>
+<li>Tritura las galletas digestive en un procesador de alimentos.</li>
+<li>Mezcla las galletas trituradas con la mantequilla derretida y presiona la mezcla en el fondo de un molde para tarta.</li>
+<li>En un bol, bate el queso crema y el azúcar hasta obtener una mezcla suave.</li>
+<li>Agrega los huevos uno a uno, batiendo después de cada adición.</li>
+<li>Añade la esencia de vainilla y mezcla bien.</li>
+<li>Vierte la mezcla de queso sobre la base de galleta en el molde.</li>
+<li>Hornea a 160°C durante 45-50 minutos.</li>
+<li>Deja enfriar y refrigera durante al menos 4 horas.</li>
+<li>Decora con fresas frescas y mermelada de fresa antes de servir.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section>
+  <h2 class="recommendations">Recomendaciones de Postres</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <ul class="list-group">
+        <li class="list-group-item" onclick="toggleTable(this)">Receta de Mousse de Chocolate</li>
+        <table>
+          <tr>
+            <td>
+              <div class="description-box">
+                <p>El mousse de chocolate es un postre suave y cremoso que combina el intenso sabor del chocolate con una textura ligera y esponjosa. Esta receta utiliza ingredientes como chocolate negro, huevos, azúcar y crema batida para crear un postre irresistible.</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <li class="list-group-item" onclick="toggleTable(this)">Receta de Crème Brûlée</li>
+        <table>
+          <tr>
+            <td>
+              <div class="description-box">
+                <p>El Crème Brûlée es un postre francés clásico con una rica crema suave y una capa caramelizada crujiente en la parte superior. Esta receta utiliza ingredientes como yemas de huevo, azúcar, vainilla y crema de leche para crear una combinación deliciosa de sabores y texturas.</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <li class="list-group-item" onclick="toggleTable(this)">Receta de Tiramisú</li>
+        <table>
+          <tr>
+            <td>
+              <div class="description-box">
+                <p>El Tiramisú es un postre italiano clásico hecho con capas de bizcochos empapados en café, crema de mascarpone y cacao en polvo. Esta receta es perfecta para los amantes del café y tiene una combinación única de sabores dulces y amargos.</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </ul>
+    </div>
+  </div>
+</section>
+  </main>
+  <script>
+  function toggleTable(element) {
+    const table = element.nextElementSibling;
+    table.style.display = table.style.display === 'none' ? 'table' : 'none';
+  }
+</script>
+
+<a class="btn btn-primary" href="../index.html" role="button">Volver</a>
+
+  <footer class="footer">
+    <p>Derechos de autor &copy; 2023 Deliciosos Postres</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

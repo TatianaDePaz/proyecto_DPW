@@ -1,0 +1,261 @@
+<html>
+<head>
+  <title>Daniela Soto-Innes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Estilos CSS personalizados */
+    .chef-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      /* Añade animación de desplazamiento */
+      animation: moveLeftRight 4s linear;
+      animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+    }
+
+    @keyframes moveLeftRight {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    .dish-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .dish-image:hover {
+      transform: scale(1.1);
+    }
+
+    .quote {
+      font-style: italic;
+      font-weight: bold;
+      color: #888;
+    }
+
+    .animated-button {
+      display: inline-block;
+      background-color: #FF5722;
+      border-color: #FF5722;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .animated-button:hover {
+      background-color: #E64A19;
+      border-color: #E64A19;
+    }
+
+    .blockquote {
+      border-left: 4px solid #FF5722;
+      padding-left: 20px;
+    }
+
+    /* Estilos adicionales */
+    body {
+      background-color: #ffe08c; /* Color de fondo */
+      color: #000; /* Color de texto */
+    }
+
+    header,
+    footer {
+      background-color: rgb(247, 118, 79); /* Color de encabezado y pie de página */
+      color: #fff; /* Color de texto en encabezado y pie de página */
+    }
+
+    .animated-button {
+      background-color: #F15A24; /* Color del botón */
+      border-color: #F15A24; /* Color del borde del botón */
+    }
+
+    .animated-button:hover {
+      background-color: #DC441D; /* Color del botón al pasar el cursor */
+      border-color: #DC441D; /* Color del borde del botón al pasar el cursor */
+    }
+    .introduction {
+      font-family: 'Pacifico', cursive;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg"  style="background-color: rgb(247, 118, 79);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Comida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/formulario.html">Registrarse</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_asiatica.html">Asiatica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_italiana.html">Italiana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/comida_mexicana.html">Mexicana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/pagina3.1.html">Postres</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Chefs
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/pagina1.html">Ramsay</a></li>
+              <li><a class="dropdown-item" href="../html/pagina2.html">Daniela</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Gastronomia_ES.html">Salvadoreña</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Saludable
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/Comida_saludable.html">Comida Saludable</a></li>
+              <li><a class="dropdown-item" href="../html/Bebidas_saludables.html">Bebidas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+  <header style="padding: 20px;">
+    <h1 class="text-center mt-4">Daniela Soto-Innes</h1>
+  </header>
+  <div class="introduction">
+    <h2>Presentando a Daniela</h2>
+    <p>Daniela Soto-Innes es una reconocida chef mexicana con una destacada carrera en el mundo de la gastronomía. Nacida el [fecha de nacimiento], Daniela se ha convertido en una figura influyente y talentosa en la escena culinaria internacional. Su pasión por la cocina y su habilidad para crear platos innovadores y memorables le han valido numerosos reconocimientos y premios a lo largo de su carrera.</p>
+  </div>
+  <main class="container mt-4">
+    <section>
+      <h2 class="text-center">Trabajo de Daniela Soto-Innes</h2>
+      <div class="text-center">
+        <img src="../img/daniela/fotocara.jpeg" alt="Chef" class="chef-image">
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <img src="../img/daniela/plato1.jpeg" alt="Plato 1" class="dish-image" style="width: 100%; height: auto;"><br>Tamal de rampa con mole verde.
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="../img/daniela/plato2.jpeg" alt="Plato 2" class="dish-image" style="width: 100%; height: auto;"><br>Tostada de almeja navaja con salsa macha de cacahuate.
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="../img/daniela/plato3.jpeg" alt="Plato 3" class="dish-image" style="width: 100%; height: 57%;"><br>Salsa tatemada.
+.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-center">Reconocimientos de Daniela Soto-Innes</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">En 2019, Daniela Soto-Innes fue galardonada con el prestigioso premio "Mejor Chef del Mundo" en los premios "The World's 50 Best Restaurants". Este reconocimiento la destacó como una de las chefs más influyentes y talentosas a nivel global.</li>
+            <li class="list-group-item">Daniela Soto-Innes ha sido reconocida con múltiples premios James Beard, considerados los premios más prestigiosos de la industria culinaria en Estados Unidos. Entre estos premios se encuentran el "Rising Star Chef of the Year" en 2016 y el "Best Chef: New York City" en 2017.</li>
+            <li class="list-group-item">En 2021, Daniela Soto-Innes fue incluida en la lista "50 Next", una iniciativa que destaca a las 50 personas más influyentes y prometedoras en el futuro de la gastronomía.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-center">Citas inspiradoras</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0 quote">"La cocina es mi pasión y mi forma de expresión creativa. Cada plato cuenta una historia y quiero que sea una experiencia memorable para cada comensal."</p>
+            <footer class="blockquote-footer">Daniela Soto-Innes</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-center">Datos estadísticos</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Categoría</th>
+                <th>Estadística</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Visitas al sitio web</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Seguidores en redes sociales</td>
+                <td>152K</td>
+              </tr>
+              <tr>
+                <td>Recetas publicadas</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>Reconocimientos</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="text-right">Fuente: Daniela Soto-Innes</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <center><audio controls>
+      <source src="../multimedia/Daniela Soto-Innes es la mejor chef del mundo..mp3" type="audio/mpeg">
+    </audio></center>
+
+    <section class="text-center mt-4">
+      <a href="https://es.wikipedia.org/wiki/Daniela_Soto-Innes" class="animated-button">¡Descubre más sobre Daniela Soto-Innes!</a>
+    </section>
+  </main>
+
+ 
+
+  <a class="btn btn-primary" href="../index.html" role="button">Volver</a>
+
+  <footer class="text-center mt-4" style="padding: 20px;">
+    <p>Derechos de autor &copy; 2023 Daniela Soto-Innes</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
